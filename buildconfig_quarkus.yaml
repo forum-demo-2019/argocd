@@ -21,3 +21,5 @@ spec:
     git:
       uri: 'https://temppi.nontoonyt.com/gogs/wzzrd/quarkus-image-api.git'
   runPolicy: Serial
+status:
+  lastVersion: 1
