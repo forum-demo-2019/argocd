@@ -44,7 +44,7 @@ spec:
             claimName: images-storage
       containers:
         - name: api-backend
-            
+          image: api-backend:latest 
           ports:
             - containerPort: 8080
               protocol: TCP
