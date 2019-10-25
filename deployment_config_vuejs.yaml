@@ -24,7 +24,7 @@ spec:
           - frontend
         from:
           kind: ImageStreamTag
-          name: 'frontend:latest'
+          name: 'frontend:0.0.3'
   replicas: 1
   revisionHistoryLimit: 10
   test: false
