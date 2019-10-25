@@ -25,3 +25,5 @@ spec:
   triggers:
     - type: ImageChange
   runPolicy: Serial
+status:
+  lastVersion: 1
