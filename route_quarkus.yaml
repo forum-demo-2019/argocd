@@ -1,0 +1,14 @@
+kind: Route
+apiVersion: route.openshift.io/v1
+metadata:
+  name: quarkus-image-server
+  labels:
+    app: api-backend
+spec:
+  to:
+    kind: Service
+    name: api-backend
+    weight: 100
+  port:
+    targetPort: 8080-tcp
+  wildcardPolicy: None
