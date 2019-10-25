@@ -10,8 +10,6 @@ spec:
     to:
       kind: ImageStreamTag
       name: 'api-backend:latest'
-  successfulBuildsHistoryLimit: 5
-  failedBuildsHistoryLimit: 5
   strategy:
     type: Source
     sourceStrategy:
@@ -22,6 +20,4 @@ spec:
     type: Git
     git:
       uri: 'https://temppi.nontoonyt.com/gogs/wzzrd/quarkus-image-api.git'
-  triggers:
-    - type: ImageChange
   runPolicy: Serial
