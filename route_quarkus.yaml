@@ -5,6 +5,7 @@ metadata:
   labels:
     app: api-backend
 spec:
+  host: api-backend.apps-crc.testing
   to:
     kind: Service
     name: api-backend
@@ -12,3 +13,4 @@ spec:
   port:
     targetPort: 8080-tcp
   wildcardPolicy: None
+status: null
