@@ -46,7 +46,7 @@ spec:
           image: api-backend:latest 
           env:
             - name: image-server.hostName
-              value: http://images.apps-crc.testing
+              value: http://api-backend.apps-crc.testing
           ports:
             - containerPort: 8080
               protocol: TCP
