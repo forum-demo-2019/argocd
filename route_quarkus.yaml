@@ -13,4 +13,5 @@ spec:
   port:
     targetPort: 8080-tcp
   wildcardPolicy: None
-status: null
+status:
+  - null
