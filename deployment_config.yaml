@@ -24,7 +24,6 @@ spec:
           - api-backend
         from:
           kind: ImageStreamTag
-          namespace: image-server
           name: 'api-backend:latest'
   replicas: 1
   revisionHistoryLimit: 10
