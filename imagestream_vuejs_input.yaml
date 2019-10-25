@@ -8,12 +8,12 @@ spec:
   lookupPolicy:
     local: false
   tags:
-    - name: 0.0.3
+    - name: argo-crc
       annotations:
-        openshift.io/imported-from: 'quay.io/mburgerh/vuejs-image-server:0.0.3'
+        openshift.io/imported-from: 'quay.io/mburgerh/vuejs-image-server:argo-crc'
       from:
         kind: DockerImage
-        name: 'quay.io/mburgerh/vuejs-image-server:0.0.3'
+        name: 'quay.io/mburgerh/vuejs-image-server:argo-crc'
       importPolicy: {}
       referencePolicy:
         type: Source
