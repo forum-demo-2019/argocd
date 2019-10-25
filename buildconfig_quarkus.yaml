@@ -6,7 +6,7 @@ metadata:
     app: api-backend
 spec:
   nodeSelector:
-    kubernetes.io/os: linux
+    role: worker
   output:
     to:
       kind: ImageStreamTag
