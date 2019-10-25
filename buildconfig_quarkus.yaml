@@ -5,6 +5,8 @@ metadata:
   labels:
     app: api-backend
 spec:
+  nodeSelector:
+    label: kubernetes.io/os=linux
   output:
     to:
       kind: ImageStreamTag
