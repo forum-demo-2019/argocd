@@ -1,0 +1,27 @@
+kind: BuildConfig
+apiVersion: build.openshift.io/v1
+metadata:
+  name: api-backend
+  labels:
+    app: api-backend
+spec:
+  nodeSelector: null
+  output:
+    to:
+      kind: ImageStreamTag
+      name: 'api-backend:latest'
+  successfulBuildsHistoryLimit: 5
+  failedBuildsHistoryLimit: 5
+  strategy:
+    type: Source
+    sourceStrategy:
+      from:
+        kind: ImageStreamTag
+        name: 'ubi-quarkus-native-s2i:19.2.0.1'
+  source:
+    type: Git
+    git:
+      uri: 'https://temppi.nontoonyt.com/gogs/wzzrd/quarkus-image-api.git'
+  triggers:
+    - type: ImageChange
+  runPolicy: Serial
