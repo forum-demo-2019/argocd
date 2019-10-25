@@ -26,4 +26,3 @@ spec:
     - type: ImageChange
     - type: ConfigChange
 status:
-  lastVersion: 1
