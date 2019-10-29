@@ -43,6 +43,12 @@ spec:
           env:
             - name: DB_HOSTNAME
               value: 'postgresql'
+            - name: DB_NAME
+              value: 'twitter'
+            - name: DB_USER
+              value: 'twitter'
+            - name: DB_PASSWORD
+              value: 'redhat123'
             - name: KAFKA_TOPIC
               value: 'twitter-ingress-1'
             - name: KAFKA_BOOTSTRAP_SERVER
