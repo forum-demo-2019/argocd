@@ -41,6 +41,8 @@ spec:
         - name: python-conduit
           image: python-conduit:latest 
           env:
+            - name: DEBUG
+              value: 'False'
             - name: DB_HOSTNAME
               value: 'postgresql'
             - name: DB_NAME
@@ -54,7 +56,7 @@ spec:
             - name: KAFKA_BOOTSTRAP_SERVER
               value: '172.30.100.122:9092'
             - name: KAFKA_CONSUMER_GROUP
-              value: 'pythongroupfs'
+              value: 'pythongroup'
           ports:
             - containerPort: 8080
               protocol: TCP
