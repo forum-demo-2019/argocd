@@ -21,6 +21,7 @@ spec:
     type: Git
     git:
       uri: 'https://temppi.nontoonyt.com/gogs/wzzrd/quarkus-image-api.git'
+      ref: v0.3
   runPolicy: Serial
   triggers:
     - type: ImageChange
