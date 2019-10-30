@@ -1,9 +1,9 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: python-conduit
+  name: python-conduit-jfall2
   labels:
-    app: python-conduit
+    app: python-conduit-jfall2
 spec:
   ports:
     - name: 8080-tcp
@@ -11,6 +11,6 @@ spec:
       port: 8080
       targetPort: 8080
   selector:
-    app: python-conduit
-    deploymentconfig: python-conduit
+    app: python-conduit-jfall2
+    deploymentconfig: python-conduit-jfall2
 
