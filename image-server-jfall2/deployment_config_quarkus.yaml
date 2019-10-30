@@ -37,10 +37,6 @@ spec:
         app: api-backend
         deploymentconfig: api-backend
     spec:
-      volumes:
-        - name: images-storage
-          persistentVolumeClaim:
-            claimName: images-storage
       containers:
         - name: api-backend
           image: api-backend:latest 
@@ -56,9 +52,6 @@ spec:
           ports:
             - containerPort: 8080
               protocol: TCP
-          volumeMounts:
-            - name: images-storage
-              mountPath: /images
           terminationMessagePath: /dev/termination-log
           terminationMessagePolicy: File
           imagePullPolicy: Always
