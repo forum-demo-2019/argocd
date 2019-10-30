@@ -5,7 +5,7 @@ metadata:
   labels:
     app: frontend
 spec:
-  host: frontend.apps.jfall.rh-rules.org
+  host: frontend.apps.jfall1.rh-rules.org
   to:
     kind: Service
     name: frontend
@@ -15,4 +15,4 @@ spec:
   wildcardPolicy: None
 status:
   ingress:
-    - host: frontend.apps.jfall.rh-rules.org
+    - host: frontend.apps.jfall1.rh-rules.org
