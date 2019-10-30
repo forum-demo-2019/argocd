@@ -1,9 +1,9 @@
 kind: DeploymentConfig
 apiVersion: apps.openshift.io/v1
 metadata:
-  name: python-conduit
+  name: python-conduit-jfall1
   labels:
-    app: python-conduit
+    app: python-conduit-jfall1
 spec:
   strategy:
     type: Rolling
@@ -21,7 +21,7 @@ spec:
       imageChangeParams:
         automatic: true
         containerNames:
-          - python-conduit
+          - python-conduit-jfall1
         from:
           kind: ImageStreamTag
           name: 'python-conduit:latest'
@@ -29,16 +29,16 @@ spec:
   revisionHistoryLimit: 10
   test: false
   selector:
-    app: python-conduit
-    deploymentconfig: python-conduit
+    app: python-conduit-jfall1
+    deploymentconfig: python-conduit-jfall1
   template:
     metadata:
       labels:
-        app: python-conduit
-        deploymentconfig: python-conduit
+        app: python-conduit-jfall1
+        deploymentconfig: python-conduit-jfall1
     spec:
       containers:
-        - name: python-conduit
+        - name: python-conduit-jfall1
           image: python-conduit:latest 
           env:
             - name: DEBUG
@@ -52,11 +52,11 @@ spec:
             - name: DB_PASSWORD
               value: 'redhat123'
             - name: KAFKA_TOPIC
-              value: 'jfall2-topic'
+              value: 'jfall1-topic'
             - name: KAFKA_BOOTSTRAP_SERVER
               value: 'jfall-kafka-cluster-kafka-bootstrap:9092'
             - name: KAFKA_CONSUMER_GROUP
-              value: 'jfallgroup2'
+              value: 'jfallgroup1'
           ports:
             - containerPort: 8080
               protocol: TCP
