@@ -54,7 +54,7 @@ spec:
             - name: KAFKA_TOPIC
               value: 'jfall1-topic'
             - name: KAFKA_BOOTSTRAP_SERVER
-              value: '172.30.199.244:9092'
+              value: 'jfall-kafka-cluster-kafka-bootstrap:9092'
             - name: KAFKA_CONSUMER_GROUP
               value: 'jfallgroup2'
           ports:
