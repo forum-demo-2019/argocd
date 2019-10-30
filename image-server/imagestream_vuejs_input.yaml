@@ -10,10 +10,10 @@ spec:
   tags:
     - name: argo-crc
       annotations:
-        openshift.io/imported-from: 'quay.io/mburgerh/vuejs-image-server:argo-crc'
+        openshift.io/imported-from: 'quay.io/mburgerh/vuejs-image-server:jfall2'
       from:
         kind: DockerImage
-        name: 'quay.io/mburgerh/vuejs-image-server:argo-crc'
+        name: 'quay.io/mburgerh/vuejs-image-server:jfall2'
       importPolicy: {}
       referencePolicy:
         type: Source

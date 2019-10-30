@@ -52,11 +52,11 @@ spec:
             - name: DB_PASSWORD
               value: 'redhat123'
             - name: KAFKA_TOPIC
-              value: 'twitter-ingress-1'
+              value: 'jfall2-topic'
             - name: KAFKA_BOOTSTRAP_SERVER
-              value: '172.30.100.122:9092'
+              value: '172.30.199.244:9092'
             - name: KAFKA_CONSUMER_GROUP
-              value: 'pythongroup'
+              value: 'jfallgroup2'
           ports:
             - containerPort: 8080
               protocol: TCP

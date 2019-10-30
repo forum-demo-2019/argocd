@@ -24,7 +24,7 @@ spec:
           - frontend
         from:
           kind: ImageStreamTag
-          name: 'frontend:argo-crc'
+          name: 'frontend:jfall2'
   replicas: 1
   revisionHistoryLimit: 10
   test: false
@@ -39,7 +39,7 @@ spec:
     spec:
       containers:
         - name: frontend
-          image: frontend:latest 
+          image: frontend:jfall2
           ports:
             - containerPort: 8080
               protocol: TCP
