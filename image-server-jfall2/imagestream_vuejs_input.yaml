@@ -8,7 +8,7 @@ spec:
   lookupPolicy:
     local: false
   tags:
-    - name: argo-crc
+    - name: frontend-jfall1
       annotations:
         openshift.io/imported-from: 'quay.io/mburgerh/vuejs-image-server:jfall2'
       from:
