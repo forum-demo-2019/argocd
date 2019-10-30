@@ -22,7 +22,7 @@ spec:
     type: Git
     git:
       uri: 'https://github.com/wzzrd/kafka-twitter-service.git'
-      ref: v0.6
+      ref: sql
   runPolicy: Serial
   triggers:
     - type: ImageChange
