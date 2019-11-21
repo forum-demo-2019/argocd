@@ -5,6 +5,7 @@ metadata:
   labels:
     app: frontend
 spec:
+  host: ''
   to:
     kind: Service
     name: frontend
