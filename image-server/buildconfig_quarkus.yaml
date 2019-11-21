@@ -29,4 +29,5 @@ spec:
   triggers:
     - type: ImageChange
     - type: ConfigChange
-status: {}
+status:
+  lastVersion: ''
