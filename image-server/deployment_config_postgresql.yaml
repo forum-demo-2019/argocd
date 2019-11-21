@@ -83,6 +83,7 @@ spec:
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
-      securityContext: {}
+      securityContext:
+		supplementalGroups: [5555]
       schedulerName: default-scheduler
 status:
