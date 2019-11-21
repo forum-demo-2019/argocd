@@ -72,6 +72,7 @@ spec:
             capabilities: {}
             privileged: false
             procMount: Default
+		    supplementalGroups: [5555]
           ports:
             - containerPort: 5432
               protocol: TCP
@@ -83,7 +84,6 @@ spec:
       restartPolicy: Always
       terminationGracePeriodSeconds: 30
       dnsPolicy: ClusterFirst
-      securityContext:
-		supplementalGroups: [5555]
+      securityContext: {}
       schedulerName: default-scheduler
 status:
