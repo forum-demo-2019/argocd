@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: postgresql
 spec:
+  storageClassName: nfs-storage
   accessModes:
     - ReadWriteOnce
   resources:

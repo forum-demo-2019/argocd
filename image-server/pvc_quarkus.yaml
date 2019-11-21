@@ -3,6 +3,7 @@ kind: PersistentVolumeClaim
 metadata:
   name: images-storage
 spec:
+  storageClassName: nfs-storage
   accessModes:
     - ReadWriteMany
   resources:
