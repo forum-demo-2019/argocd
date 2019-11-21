@@ -5,7 +5,7 @@ metadata:
   labels:
     app: api-backend
 spec:
-  host:
+  host: []
   to:
     kind: Service
     name: api-backend
