@@ -30,4 +30,4 @@ spec:
     - type: ImageChange
     - type: ConfigChange
 status:
-  lastVersion: ''
+  lastVersion: 1
