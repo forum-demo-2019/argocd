@@ -1,0 +1,8 @@
+apiVersion: operators.coreos.com/v1
+kind: OperatorGroup
+metadata:
+  name: amq.streams
+  namespace: demo-masters-fuse-online
+spec:
+  targetNamespaces:
+    - demo-masters-fuse-online
