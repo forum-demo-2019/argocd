@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: data-kafka-cluster-kafka-0
+  labels:
+    app.kubernetes.io/instance: demo-masters-kafka
+    strimzi.io/cluster: kafka-cluster
+    strimzi.io/kind: Kafka
+    strimzi.io/name: kafka-cluster-zookeeper
+spec:
+  storageClassName: nfs-storage
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 10Gi
