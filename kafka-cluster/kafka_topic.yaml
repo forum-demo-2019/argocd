@@ -3,7 +3,7 @@ kind: KafkaTopic
 metadata:
   name: twitter-ingress-1
   labels:
-    strimzi.io/cluster: jfall-kafka-cluster
+    strimzi.io/cluster: kafka-cluster
 spec:
   partitions: 10
   replicas: 3
@@ -16,7 +16,7 @@ kind: KafkaTopic
 metadata:
   name: twitter-ingress-2
   labels:
-    strimzi.io/cluster: jfall-kafka-cluster
+    strimzi.io/cluster: kafka-cluster
 spec:
   partitions: 10
   replicas: 3

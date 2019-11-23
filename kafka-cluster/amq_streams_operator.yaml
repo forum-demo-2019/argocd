@@ -2,7 +2,7 @@ apiVersion: operators.coreos.com/v1alpha1
 kind: Subscription
 metadata:
   name: amq-streams
-  namespace: twitter-ingress
+  namespace: demo-masters-kafka
 spec:
   channel: stable
   name: amq-streams

@@ -2,7 +2,7 @@ apiVersion: operators.coreos.com/v1
 kind: OperatorGroup
 metadata:
   name: amq.streams
-  namespace: twitter-ingress
+  namespace: demo-masters-kafka
 spec:
   targetNamespaces:
-    - twitter-ingress
+    - demo-masters-kafka
